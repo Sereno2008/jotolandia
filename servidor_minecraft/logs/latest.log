@@ -1,0 +1,666 @@
+[04:47:25] [ServerMain/INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.3+9-2-24.04.2-Ubuntu; Ubuntu null) on Linux 6.8.0-1052-azure (amd64)
+[04:47:25] [ServerMain/INFO]: [bootstrap] Loading Paper 26.1.2-60-main@b4682bf (2026-05-04T06:25:04Z) for Minecraft 26.1.2
+[04:47:25] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[04:47:26] [ServerMain/INFO]: [PluginInitializerManager] Initialized 4 plugins
+[04:47:26] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (4):
+ - Geyser-Spigot (2.10.1-SNAPSHOT), ViaBackwards (5.10.0), ViaVersion (5.11.0), floodgate (2.2.5-SNAPSHOT (b138-fc99cfc))
+[04:47:30] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[04:47:32] [ServerMain/INFO]: Loaded 1515 recipes
+[04:47:32] [ServerMain/INFO]: Loaded 1617 advancements
+[04:47:32] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[04:47:33] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 439.4ms
+[04:47:33] [Server thread/INFO]: Starting minecraft server version 26.1.2
+[04:47:33] [Server thread/INFO]: Loading properties
+[04:47:34] [Server thread/INFO]: This server is running Paper version 26.1.2-60-main@b4682bf (2026-05-04T06:25:04Z) (Implementing API version 26.1.2.build.60-stable)
+[04:47:34] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[04:47:34] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[04:47:34] [Server thread/INFO]: Using 4 threads for Netty based IO
+[04:47:35] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[04:47:35] [Server thread/INFO]: Default game type: SURVIVAL
+[04:47:35] [Server thread/INFO]: Generating keypair
+[04:47:35] [Server thread/INFO]: Starting Minecraft server on *:25565
+[04:47:35] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[04:47:35] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[04:47:36] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.5-SNAPSHOT (b138-fc99cfc)
+[04:47:37] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
+[04:47:37] [Server thread/INFO]: [floodgate] Took 563ms to boot Floodgate
+[04:47:37] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.11.0
+[04:47:37] [Server thread/INFO]: [ViaVersion] ViaVersion 5.11.0 is now loaded. Registering protocol transformers and injecting...
+[04:47:38] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[04:47:38] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[04:47:38] [Via-Mappingloader-1/ERROR]: [ViaVersion] Error during loading of Protocol1_10To1_9_3
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Invalid version: 1
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1828) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid version: 1
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:219) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:197) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadMappings(MappingDataBase.java:163) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadBiMappings(MappingDataBase.java:189) ~[?:?]
+	at ViaBackwards-5.10.0.jar//com.viaversion.viabackwards.api.data.BackwardsMappingData.loadBiMappings(BackwardsMappingData.java:127) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadFullMappings(MappingDataBase.java:177) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadFullOrBiMappings(MappingDataBase.java:167) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.load(MappingDataBase.java:95) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:213) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825) ~[?:?]
+	... 5 more
+[04:47:38] [Via-Mappingloader-1/ERROR]: [ViaVersion] Error during loading of Protocol1_11To1_10
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Invalid version: 1
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1828) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid version: 1
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:219) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:197) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadMappings(MappingDataBase.java:163) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadBiMappings(MappingDataBase.java:189) ~[?:?]
+	at ViaBackwards-5.10.0.jar//com.viaversion.viabackwards.api.data.BackwardsMappingData.loadBiMappings(BackwardsMappingData.java:127) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadFullMappings(MappingDataBase.java:177) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadFullOrBiMappings(MappingDataBase.java:167) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.load(MappingDataBase.java:95) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:213) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825) ~[?:?]
+	... 5 more
+[04:47:38] [Via-Mappingloader-1/ERROR]: [ViaVersion] Error during loading of Protocol1_12To1_11_1
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Invalid version: 1
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1828) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid version: 1
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:219) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:197) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadMappings(MappingDataBase.java:163) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadBiMappings(MappingDataBase.java:189) ~[?:?]
+	at ViaBackwards-5.10.0.jar//com.viaversion.viabackwards.api.data.BackwardsMappingData.loadBiMappings(BackwardsMappingData.java:127) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadFullMappings(MappingDataBase.java:177) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadFullOrBiMappings(MappingDataBase.java:167) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.load(MappingDataBase.java:95) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:213) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825) ~[?:?]
+	... 5 more
+[04:47:38] [Server thread/ERROR]: [ViaVersion] Error during loading of Protocol1_13To1_12_2
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Invalid version: 1
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:812) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid version: 1
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:219) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:197) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadMappings(MappingDataBase.java:163) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.load(MappingDataBase.java:84) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:213) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808) ~[?:?]
+	... 5 more
+[04:47:38] [Via-Mappingloader-1/ERROR]: [ViaVersion] Error during loading of Protocol1_13_1To1_13
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Invalid version: 1
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:812) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid version: 1
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:219) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:197) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadMappings(MappingDataBase.java:163) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.load(MappingDataBase.java:84) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:213) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808) ~[?:?]
+	... 5 more
+[04:47:38] [Server thread/ERROR]: [ViaVersion] Error during loading of Protocol1_14To1_13_2
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Invalid version: 1
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:812) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid version: 1
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:219) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:197) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadMappings(MappingDataBase.java:163) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.load(MappingDataBase.java:84) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:213) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808) ~[?:?]
+	... 5 more
+[04:47:38] [Via-Mappingloader-1/ERROR]: [ViaVersion] Error during loading of Protocol1_15To1_14_4
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Invalid version: 1
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:812) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid version: 1
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:219) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:197) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadMappings(MappingDataBase.java:163) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.load(MappingDataBase.java:84) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:213) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808) ~[?:?]
+	... 5 more
+[04:47:38] [Via-Mappingloader-1/ERROR]: [ViaVersion] Error during loading of Protocol1_16To1_15_2
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Invalid version: 1
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:812) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid version: 1
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:219) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:197) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadMappings(MappingDataBase.java:163) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.load(MappingDataBase.java:84) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:213) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808) ~[?:?]
+	... 5 more
+[04:47:38] [Via-Mappingloader-1/ERROR]: [ViaVersion] Error during loading of Protocol1_16_2To1_16_1
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Invalid version: 1
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:812) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid version: 1
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:219) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:197) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadMappings(MappingDataBase.java:163) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.load(MappingDataBase.java:84) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:213) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808) ~[?:?]
+	... 5 more
+[04:47:38] [Via-Mappingloader-1/ERROR]: [ViaVersion] Error during loading of Protocol1_17To1_16_4
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Invalid version: 1
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:812) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid version: 1
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:219) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:197) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadMappings(MappingDataBase.java:163) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.load(MappingDataBase.java:84) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:213) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808) ~[?:?]
+	... 5 more
+[04:47:38] [Via-Mappingloader-1/ERROR]: [ViaVersion] Error during loading of Protocol1_18To1_17_1
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Invalid version: 1
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:812) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid version: 1
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:219) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:197) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadMappings(MappingDataBase.java:163) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.load(MappingDataBase.java:84) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:213) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808) ~[?:?]
+	... 5 more
+[04:47:38] [Via-Mappingloader-1/ERROR]: [ViaVersion] Error during loading of Protocol1_19To1_18_2
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Invalid version: 1
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:812) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid version: 1
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:219) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:197) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadMappings(MappingDataBase.java:163) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.load(MappingDataBase.java:84) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:213) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808) ~[?:?]
+	... 5 more
+[04:47:38] [Via-Mappingloader-1/ERROR]: [ViaVersion] Error during loading of Protocol1_19_3To1_19_1
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Invalid version: 1
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:812) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid version: 1
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:219) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:197) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadMappings(MappingDataBase.java:163) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.load(MappingDataBase.java:84) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:213) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808) ~[?:?]
+	... 5 more
+[04:47:38] [Via-Mappingloader-1/ERROR]: [ViaVersion] Error during loading of Protocol1_19_4To1_19_3
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Invalid version: 1
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:812) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid version: 1
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:219) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:197) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadMappings(MappingDataBase.java:163) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.load(MappingDataBase.java:84) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:213) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808) ~[?:?]
+	... 5 more
+[04:47:38] [Server thread/ERROR]: [ViaVersion] Error during loading of Protocol1_20To1_19_4
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Invalid version: 1
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:812) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid version: 1
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:219) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:197) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadMappings(MappingDataBase.java:163) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.load(MappingDataBase.java:84) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:213) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808) ~[?:?]
+	... 5 more
+[04:47:38] [Via-Mappingloader-1/ERROR]: [ViaVersion] Error during loading of Protocol1_20_2To1_20
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Invalid version: 1
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:812) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid version: 1
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:219) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:197) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadMappings(MappingDataBase.java:163) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.load(MappingDataBase.java:84) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:213) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808) ~[?:?]
+	... 5 more
+[04:47:38] [Via-Mappingloader-1/ERROR]: [ViaVersion] Error during loading of Protocol1_20_3To1_20_2
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Invalid version: 1
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:812) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid version: 1
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:219) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:197) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadMappings(MappingDataBase.java:163) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.load(MappingDataBase.java:84) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:213) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808) ~[?:?]
+	... 5 more
+[04:47:38] [Server thread/ERROR]: [ViaVersion] Error during loading of Protocol1_20_5To1_20_3
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Invalid version: 1
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:812) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid version: 1
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:219) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:197) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadMappings(MappingDataBase.java:163) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.load(MappingDataBase.java:84) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:213) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808) ~[?:?]
+	... 5 more
+[04:47:38] [Server thread/ERROR]: [ViaVersion] Error during loading of Protocol1_21To1_20_5
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Invalid version: 1
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:812) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid version: 1
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:219) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:197) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadMappings(MappingDataBase.java:163) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.load(MappingDataBase.java:84) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:213) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808) ~[?:?]
+	... 5 more
+[04:47:38] [Server thread/ERROR]: [ViaVersion] Error during loading of Protocol1_21_2To1_21
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Invalid version: 1
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:812) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid version: 1
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:219) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:197) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadMappings(MappingDataBase.java:163) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.load(MappingDataBase.java:84) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:213) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808) ~[?:?]
+	... 5 more
+[04:47:38] [Via-Mappingloader-1/ERROR]: [ViaVersion] Error during loading of Protocol1_21_4To1_21_2
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Invalid version: 1
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:812) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid version: 1
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:219) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:197) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadMappings(MappingDataBase.java:163) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.load(MappingDataBase.java:84) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:213) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808) ~[?:?]
+	... 5 more
+[04:47:38] [Via-Mappingloader-1/ERROR]: [ViaVersion] Error during loading of Protocol1_21_5To1_21_4
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Invalid version: 1
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:812) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid version: 1
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:219) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:197) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadMappings(MappingDataBase.java:163) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.load(MappingDataBase.java:84) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:213) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808) ~[?:?]
+	... 5 more
+[04:47:38] [Server thread/ERROR]: [ViaVersion] Error during loading of Protocol1_21_6To1_21_5
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Invalid version: 1
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:812) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid version: 1
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:219) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:197) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadMappings(MappingDataBase.java:163) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.load(MappingDataBase.java:84) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:213) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808) ~[?:?]
+	... 5 more
+[04:47:38] [Server thread/ERROR]: [ViaVersion] Error during loading of Protocol1_21_7To1_21_6
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Invalid version: 1
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:812) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid version: 1
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:219) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:197) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadMappings(MappingDataBase.java:163) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.load(MappingDataBase.java:84) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:213) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808) ~[?:?]
+	... 5 more
+[04:47:38] [Via-Mappingloader-1/ERROR]: [ViaVersion] Error during loading of Protocol1_21_9To1_21_7
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Invalid version: 1
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:812) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid version: 1
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:219) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:197) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadMappings(MappingDataBase.java:163) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.load(MappingDataBase.java:84) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:213) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808) ~[?:?]
+	... 5 more
+[04:47:38] [Server thread/ERROR]: [ViaVersion] Error during loading of Protocol1_21_11To1_21_9
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Invalid version: 1
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:812) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid version: 1
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:219) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:197) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadMappings(MappingDataBase.java:163) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.load(MappingDataBase.java:84) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:213) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808) ~[?:?]
+	... 5 more
+[04:47:38] [Server thread/ERROR]: [ViaVersion] Error during loading of Protocol26_1To1_21_11
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Invalid version: 1
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:812) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid version: 1
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:219) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:197) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadMappings(MappingDataBase.java:163) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.load(MappingDataBase.java:84) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:213) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808) ~[?:?]
+	... 5 more
+[04:47:38] [Server thread/ERROR]: [ViaVersion] Error during loading of Protocol26_2To26_1
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Invalid version: 1
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:812) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Invalid version: 1
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:219) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataLoader.loadMappings(MappingDataLoader.java:197) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.loadMappings(MappingDataBase.java:163) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.data.MappingDataBase.load(MappingDataBase.java:84) ~[?:?]
+	at ViaVersion-5.11.0.jar//com.viaversion.viaversion.api.protocol.AbstractProtocol.loadMappingData(AbstractProtocol.java:213) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808) ~[?:?]
+	... 5 more
+[04:47:38] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.10.1-SNAPSHOT
+[04:47:39] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[04:47:39] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
+[04:47:39] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.10.0
+[04:47:39] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[04:47:39] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[04:47:39] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[04:47:39] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[04:47:39] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[04:47:39] [Server thread/INFO]: Preparing level "world"
+[04:47:39] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:overworld'...
+[04:47:39] [Server thread/INFO]: Prepared spawn area in 1 ms
+[04:47:39] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_nether'...
+[04:47:39] [Server thread/INFO]: Prepared spawn area in 1 ms
+[04:47:39] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_end'...
+[04:47:39] [Server thread/INFO]: Prepared spawn area in 1 ms
+[04:47:39] [Server thread/INFO]: Done preparing level "world" (0.776s)
+[04:47:39] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b138-fc99cfc)
+[04:47:40] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.11.0
+[04:47:40] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 26.1-26.1.2 (775)
+[04:47:40] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.10.1-SNAPSHOT
+[04:47:41] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.10.0
+[04:47:41] [Server thread/INFO]: [spark] Starting background profiler...
+[04:47:42] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[04:47:42] [Server thread/INFO]: [Geyser-Spigot] 
+[04:47:42] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.10.1-b1183 (git-master-49f773e)
+[04:47:42] [Server thread/INFO]: [Geyser-Spigot] 
+[04:47:42] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[04:47:46] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
+[04:47:46] [Server thread/INFO]: [Geyser-Spigot] Done (3.72s)! Run /geyser help for help!
+[04:47:46] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[04:47:46] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[04:47:46] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[04:47:46] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[04:47:46] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[04:47:46] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[04:47:46] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[04:47:46] [Server thread/INFO]: Running delayed init tasks
+[04:47:46] [Server thread/INFO]: Done (22.304s)! For help, type "help"
+[04:47:46] [Craft Scheduler Thread - 2 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[04:47:46] [Paper Async Task Handler Thread - 1/INFO]: *** Currently you are 14 build(s) behind ***
+[04:47:46] [Paper Async Task Handler Thread - 1/INFO]: *** It is highly recommended to download the latest build from https://papermc.io/downloads/paper ***
+[04:47:56] [GeyserServerChild-4-1/INFO]: [Geyser-Spigot] Player connected with username AaronSebas8650 (1001)
+[04:47:56] [localSession-7-2/INFO]: [Geyser-Spigot] AaronSebas8650 (logged in as: AaronSebas8650) has connected to the Java server
+[04:47:58] [Server thread/INFO]: [floodgate] Floodgate player logged in as .AaronSebas8650 joined (UUID: 00000000-0000-0000-0009-01f5e00ba6d2)
+[04:47:58] [Server thread/INFO]: .AaronSebas8650 joined the game
+[04:47:58] [Server thread/INFO]: .AaronSebas8650[/127.170.11.96:0] logged in with entity id 53 at ([minecraft:overworld]-25.5, 67.5625, 15.5)
+[04:48:15] [GeyserServerChild-4-1/INFO]: [Geyser-Spigot] AaronSebas8650 has disconnected from the Java server because of Bedrock client timed out
+[04:48:15] [Geyser Spigot connection thread-6-3/INFO]: [floodgate] Floodgate player logged in as .AaronSebas8650 disconnected
+[04:48:15] [Server thread/INFO]: .AaronSebas8650 lost connection: Disconnected
+[04:48:15] [Server thread/INFO]: .AaronSebas8650 left the game
+[04:49:41] [Server thread/INFO]: Stopping the server
+[04:49:41] [Server thread/INFO]: Stopping server
+[04:49:41] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.10.0
+[04:49:41] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.10.1-SNAPSHOT
+[04:49:41] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
+[04:49:42] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
+[04:49:42] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.11.0
+[04:49:42] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
+[04:49:42] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.5-SNAPSHOT (b138-fc99cfc)
+[04:49:42] [Server thread/INFO]: Saving players
+[04:49:42] [WebSocketConnectReadThread-84/INFO]: [Geyser-Spigot] The skin uploader has been closed
+[04:49:42] [Server thread/INFO]: Saving worlds
+[04:49:42] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[04:49:42] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'minecraft:overworld'
+[04:49:42] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'minecraft:overworld'
+[04:49:42] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'minecraft:overworld'
+[04:49:42] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'minecraft:overworld' in 0.00s
+[04:49:42] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'minecraft:overworld'
+[04:49:42] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'minecraft:overworld'
+[04:49:42] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[04:49:42] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'minecraft:the_nether'
+[04:49:42] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'minecraft:the_nether'
+[04:49:42] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'minecraft:the_nether'
+[04:49:42] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'minecraft:the_nether' in 0.00s
+[04:49:42] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'minecraft:the_nether'
+[04:49:42] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'minecraft:the_nether'
+[04:49:42] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[04:49:42] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'minecraft:the_end'
+[04:49:42] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'minecraft:the_end'
+[04:49:42] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'minecraft:the_end'
+[04:49:42] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'minecraft:the_end' in 0.00s
+[04:49:42] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'minecraft:the_end'
+[04:49:42] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'minecraft:the_end'
+[04:49:42] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[04:49:42] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[04:49:42] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[04:49:42] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[04:49:42] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
+[04:49:42] [Server thread/INFO]: All RegionFile I/O tasks to complete
+[04:49:42] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[04:49:42] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
